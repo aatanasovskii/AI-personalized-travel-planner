@@ -1,7 +1,7 @@
 import {ApiGet, ApiPost} from "@/services/api.js";
 
-const register = ({username, password}) => {
-    return ApiPost('register', {username, password})
+const signIn = ({username, password}) => {
+    return ApiPost('sign-in', {username, password})
 }
 
 const self = () => {
@@ -9,6 +9,6 @@ const self = () => {
 }
 
 export {
-    register,
+    signIn,
     self
 }

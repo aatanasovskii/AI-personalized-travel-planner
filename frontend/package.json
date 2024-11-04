@@ -10,8 +10,10 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@vuelidate/validators": "^2.0.4",
     "axios": "^1.7.7",
     "vi-common": "^0.0.7",
+    "vi-form-builder": "^1.0.5",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5",
     "vuex": "^4.1.0",

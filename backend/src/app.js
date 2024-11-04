@@ -15,7 +15,7 @@ app.get('/status', (req,res) => {
     })
 })
 
-app.post('/register', (req, res) => {
+app.post('/sign-in', (req, res) => {
 
 });
 

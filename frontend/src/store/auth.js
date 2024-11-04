@@ -1,4 +1,4 @@
-import {register, self} from "@/modules/auth/api.js";
+import {signIn, self} from "@/modules/auth/api.js";
 
 const defaultState = () => ({
     self: null,
@@ -16,8 +16,8 @@ export default {
                     return data
                 })
         },
-        register({commit}, input) {
-            return register(input)
+        signIn({commit}, input) {
+            return signIn(input)
                 .then((data) => {
                     commit('setSelf', data.user)
                     commit('setAccessToken', data.accessToken)
